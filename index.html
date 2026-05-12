@@ -3,16 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>xlzhu09</title>
+  <meta name="description" content="Xiliang Zhu — Applied Scientist working on language models in production. Research on LLM training, alignment, quantization, and multilingual NLP." />
+  <meta name="author" content="Xiliang Zhu" />
+  <meta property="og:title" content="Xiliang Zhu" />
+  <meta property="og:description" content="Applied Scientist. I build language models that ship." />
+  <meta property="og:type" content="website" />
+  <title>Xiliang Zhu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Hi, I'm Xiliang</h1>
-    <p class="tagline">Software engineer. Building things.</p>
-    <nav>
-      <a href="https://github.com/xlzhu09" target="_blank">GitHub</a>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#" class="nav-brand"><span class="mono">&gt;</span> xlzhu</a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#publications">publications</a>
+      <a href="#contact">contact</a>
     </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <h1 class="hero-title">
+        Hi, I'm Xiliang Zhu<span class="caret" aria-hidden="true"></span>
+      </h1>
+      <p class="hero-sub">
+        I build language models that ship — training, alignment, and the
+        unglamorous engineering that makes them work in production.
+      </p>
+      <div class="hero-meta">
+        <span class="chip">Dialpad</span>
+        <span class="chip ghost">M.Eng. McGill</span>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <h2 class="section-title"><span class="mono section-num">01</span> About</h2>
+      <div class="section-body prose">
+        <p>
+          I'm an applied scientist focused on natural language processing, with
+          a soft spot for the messy gap between a model that works in a notebook
+          and one that holds up under real users, real latency budgets, and real
+          languages.
+        </p>
+        <p>
+          Most of my recent work sits at the intersection of large language
+          models and production constraints: training and aligning
+          domain-specific LLMs (including <em>DialpadGPT</em>), squeezing them
+          down with post-training quantization, and evaluating how well they
+          actually reason over messy, multi-turn conversational data — in
+          English, Spanish, French, and other languages.
+        </p>
+        <p>
+          I'm based out of Toronto, Ontario, Canada. 
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experience">
+      <h2 class="section-title"><span class="mono section-num">02</span> Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta mono">2019 — present</div>
+          <div class="timeline-body">
+            <h3>Dialpad <span class="timeline-role">— Senior Applied Scientist, NLP</span></h3>
+            <p>
+              R&amp;D on domain-specific LLMs and their industry applications:
+              language model training, alignment, runtime optimization. Helped
+              ship <em>DialpadGPT</em> and <em>AI Scorecard</em>. Published work on multilingual sentiment
+              analysis, LLM quantization, and punctuation restoration for
+              customer-support transcripts.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta mono">M.Eng.</div>
+          <div class="timeline-body">
+            <h3>McGill University</h3>
+            <p>Master of Engineering — Machine Learning.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section reveal" id="publications">
+      <h2 class="section-title"><span class="mono section-num">03</span> Selected Publications</h2>
+      <ul class="pub-list">
+        <li class="pub">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://aclanthology.org/2025.emnlp-industry.129/" target="_blank" rel="noopener">
+              How Accurate Are LLMs at Multi-Question Answering on Conversational Transcripts?
+            </a>
+            <p class="pub-authors"><strong>Xiliang Zhu</strong>, Shi Zong, David Rossouw</p>
+            <p class="pub-venue mono">EMNLP 2025 · Industry Track</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://aclanthology.org/2025.naacl-industry.41/" target="_blank" rel="noopener">
+              Can Post-Training Quantization Benefit from an Additional QLoRA Integration?
+            </a>
+            <p class="pub-authors"><strong>Xiliang Zhu</strong>, Elena Khasanova, Cheng Chen</p>
+            <p class="pub-venue mono">NAACL 2025 · Industry Track</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year mono">2024</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://aclanthology.org/2024.wassa-1.12/" target="_blank" rel="noopener">
+              The Model Arena for Cross-lingual Sentiment Analysis: A Comparative Study in the Era of Large Language Models
+            </a>
+            <p class="pub-authors"><strong>Xiliang Zhu</strong>, Shayna Gardiner, Tere Roldán, David Rossouw</p>
+            <p class="pub-venue mono">WASSA @ ACL 2024</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year mono">2024</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://aclanthology.org/2024.unimplicit-1.3/" target="_blank" rel="noopener">
+              Resolving Transcription Ambiguity in Spanish: A Hybrid Acoustic-Lexical System for Punctuation Restoration
+            </a>
+            <p class="pub-authors"><strong>Xiliang Zhu</strong>, Chia-Tien Chang, Shayna Gardiner, David Rossouw, Jonas Robertson</p>
+            <p class="pub-venue mono">UnImplicit @ EACL 2024</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year mono">2022</span>
+          <div class="pub-body">
+            <a class="pub-title" href="https://aclanthology.org/2022.deeplo-1.9/" target="_blank" rel="noopener">
+              Punctuation Restoration in Spanish Customer Support Transcripts using Transfer Learning
+            </a>
+            <p class="pub-authors"><strong>Xiliang Zhu</strong>, Shayna Gardiner, David Rossouw, Tere Roldán, Simon Corston-Oliver</p>
+            <p class="pub-venue mono">DeepLo @ NAACL 2022</p>
+          </div>
+        </li>
+      </ul>
+      <p class="pub-foot mono">
+        full list →
+        <a href="https://scholar.google.com/citations?user=RpNaaloAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      </p>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <h2 class="section-title"><span class="mono section-num">04</span> Contact</h2>
+      <p class="contact-lede">
+        Best place to reach me is email. I also lurk on GitHub.
+      </p>
+      <ul class="links">
+        <li>
+          <a href="mailto:yjjhzxl@gmail.com">
+            <span class="mono link-tag">email</span>
+            <span class="link-val">yjjhzxl@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/xlzhu09" target="_blank" rel="noopener">
+            <span class="mono link-tag">github</span>
+            <span class="link-val">@xlzhu09</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://ca.linkedin.com/in/xiliang-zhu" target="_blank" rel="noopener">
+            <span class="mono link-tag">linkedin</span>
+            <span class="link-val">xiliang zhu</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=RpNaaloAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <span class="mono link-tag">papers</span>
+            <span class="link-val">Google Scholar</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Xiliang Zhu</span>
+    <span class="dot">·</span>
+    <span>last updated May 2026</span>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
